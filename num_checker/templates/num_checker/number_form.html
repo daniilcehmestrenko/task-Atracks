@@ -1,0 +1,6 @@
+<form action="{% url 'check_number' %}" method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Найти</button>
+</form>
+<h2>{{ mess }}</h2>
